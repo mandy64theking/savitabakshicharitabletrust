@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CustomNavBar from "@/components/customNavBar";
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "./footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Late Savita Bakshi Charitable Trust",
-  description: "Empowering future generations through Chess | Education | Sustainability",
+  description:
+    "Empowering future generations through Chess | Education | Sustainability",
 };
 
 export default function RootLayout({
@@ -30,14 +32,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-        <CustomNavBar/>
-        {children}
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <CustomNavBar />
+          {children}
         </ThemeProvider>
+        <Footer />
       </body>
     </html>
   );

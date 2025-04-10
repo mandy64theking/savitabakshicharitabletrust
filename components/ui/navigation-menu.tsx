@@ -46,16 +46,21 @@ function NavigationMenuList({
   )
 }
 
-const NavigationMenuItem = React.forwardRef<
-  React.ElementRef<typeof NavigationMenuPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Item>
->(({ className, ...props }, ref) => (
-  <NavigationMenuPrimitive.Item
-    ref={ref}
-    className={cn("relative", className)}
-    {...props}
-  />
-))
+function NavigationMenuItem({
+  className,
+  ...props
+}: React.ComponentProps<typeof NavigationMenuPrimitive.Item>) {
+  return (
+    <NavigationMenuPrimitive.Item
+      data-slot="navigation-menu-item"
+      className={cn(
+        "group relative flex items-center justify-centers",
+        className
+      )}
+      {...props}
+    />
+  );
+}
 
 const navigationMenuTriggerStyle = cva(
   "group inline-flex h-9 w-max items-center justify-center rounded-md  bg-background bg-opacity-50 px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 transition-[color,box-shadow] focus-visible:ring-4 focus-visible:outline-1"
@@ -81,21 +86,23 @@ function NavigationMenuTrigger({
   )
 }
 
-const NavigationMenuContent = React.forwardRef<
-  React.ElementRef<typeof NavigationMenuPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content>
->(({ className, ...props }, ref) => (
-  <NavigationMenuPrimitive.Content
-    ref={ref}
-    className={cn(
-      "right-0  absolute",
-      "absolute top-full w-fit bg-popover mt-[5px] z-10 rounded-xl font-medium",
-      "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52",
-      className
-    )}
-    {...props}
-  />
-));
+function NavigationMenuContent({
+  className,
+  ...props
+}: React.ComponentProps<typeof NavigationMenuPrimitive.Content>) {
+  return (
+    <NavigationMenuPrimitive.Content
+      data-slot="navigation-menu-content"
+      className={cn(
+        "right-0  absolute",
+        "absolute top-full w-fit bg-popover mt-[5px] z-10 rounded-xl font-medium cursor-pointer",
+        "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52",
+        className
+      )}
+      {...props}
+    />
+  );
+}
 
 function NavigationMenuLink({
   className,

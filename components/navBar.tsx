@@ -54,7 +54,7 @@ export default function NavBar({ className }: { className?: string }) {
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
-                  " bg-foreground text-background hover:bg-background"
+                  " bg-linear-to-b from-orange-400 to-orange-600 text-background hover:bg-background"
                 }
               >
                Make a Donation!

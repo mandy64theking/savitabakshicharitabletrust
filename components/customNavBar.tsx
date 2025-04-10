@@ -17,7 +17,7 @@ export default function CustomNavBar() {
   };
   return (
     <div
-      className={`fixed top-0 left-0 sm:w-[95vw] w-[90vw] bg-background dark:bg-black opacity-90 dark:opacity-100 flex ${
+      className={`fixed top-0 left-0 z-100 sm:w-[95vw] w-[90vw] bg-background dark:bg-black opacity-90 dark:opacity-100 flex ${
         menuOpen
           ? "flex-col h-[48vh] z-10 opacity-100"
           : "flex-row h-[15vh] z-10"
