@@ -35,7 +35,7 @@ export default function Home() {
               alt="Prize Distribution Picture"
               width={900}
               height={900}
-              className="blur-[1px] group-hover:blur-[0px] rounded-2xl"
+              className="rounded-2xl"
             />
             <div className="w-full overflow-hidden whitespace-nowrap py-2">
               <h1 className="inline-block animate-infinite-scroll min-w-max">
