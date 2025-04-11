@@ -22,20 +22,28 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex align-middle items-center">
-            <Image
-              src="/instagram.png"
-              alt="Instagram"
-              width={64}
-              height={64}
-              className="min-w-15 border-1 m-1 p-3 rounded-xl"
-            />
-            <Image
-              src="/whatsapp-color.png"
-              alt="Whatsapp"
-              width={64}
-              height={64}
-              className="min-w-15 border-1 m-1 p-3 rounded-xl"
-            />
+            <Link
+              passHref
+              href="https://www.instagram.com/savitabakshicharitabletrust/"
+              legacyBehavior
+            >
+              <Image
+                src="/instagram.png"
+                alt="Instagram"
+                width={64}
+                height={64}
+                className="min-w-15 border-1 m-1 p-3 rounded-xl"
+              />
+            </Link>
+            <Link passHref href="https://wa.me/919028698447" legacyBehavior>
+              <Image
+                src="/whatsapp-color.png"
+                alt="Whatsapp"
+                width={64}
+                height={64}
+                className="min-w-15 border-1 m-1 p-3 rounded-xl"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex-1 mt-6">
