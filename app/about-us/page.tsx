@@ -79,7 +79,7 @@ export default function Page() {
             </h1>
           </div>
           <div className="flex-1">
-            <div className="rounded-xl border-2 p-5 m-5">
+            <div className="rounded-xl border-2 p-5 my-5 lg:mx-5">
               <h1 className="font-bold text-3xl text-center">Who we are?</h1>
               <h1 className="text-start pt-10">
                 Late Savita Bakshi Charitable Trust, Amravati (officially
