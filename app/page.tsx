@@ -16,7 +16,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="pt-[20vh] w-[90vw] flex justify-center m-auto">
+    <div className="pt-[20vh] w-[90vw] flex flex-col justify-center m-auto pb-4">
       <div className="grid lg:grid-cols-3 gap-3 w-[90vw]">
         <div className="relative lg:col-span-2 max-w-[97vw] lg:max-w-[70vw]">
           <div className="flex justify-center">
@@ -27,41 +27,54 @@ export default function Home() {
                 words={words}
               />
             </h1>
-            <div className="relative group">
-              <div className="bg-black bg-opacity-40 blur-[1px] group-hover:blur-[0px]" />
-              <Image
-                src="/chess-podium.jpg"
-                alt="Kids playing chess"
-                width={900}
-                height={900}
-                className="blur-[1px] group-hover:blur-[0px] rounded-2xl"
-              />
+          </div>
+          <div className="relative group">
+            <div className="bg-black bg-opacity-40 blur-[1px] group-hover:blur-[0px]" />
+            <Image
+              src="/chess-podium.jpg"
+              alt="Prize Distribution Picture"
+              width={900}
+              height={900}
+              className="blur-[1px] group-hover:blur-[0px] rounded-2xl"
+            />
+            <div className="w-full overflow-hidden whitespace-nowrap py-2">
+              <h1 className="inline-block animate-infinite-scroll min-w-max">
+                <b className="text-red-500 animate-ping mr-1">Announcement!</b>{" "}
+                5th One Day Rapid Open Chess Tournament coming soon in May 2025!
+                Classical And Blitz coming at the end of May!
+              </h1>
             </div>
           </div>
         </div>
         <div className="grid gap-3">
           <Card className="bg-orange-800/10 hover:border-orange-800">
             <CardHeader>
-              <CardTitle className="font-extrabold text-7xl">5000+</CardTitle>
+              <CardTitle className="font-extrabold text-6xl text-orange-800">
+                6000+
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
-              <p>Chess Games Hosted</p>
+              <p className="font-bold">Chess Games Hosted</p>
             </CardContent>
           </Card>
           <Card className="bg-green-800/10 hover:border-green-800">
             <CardHeader>
-              <CardTitle className="font-extrabold text-7xl">₹100k+</CardTitle>
+              <CardTitle className="font-extrabold text-6xl text-green-800">
+                ₹1.2 L+
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
-              <p>Cash Prizes Disbursed</p>
+              <p className="font-bold">Cash Prizes Disbursed</p>
             </CardContent>
           </Card>
           <Card className="bg-blue-800/10 hover:border-blue-800">
             <CardHeader>
-              <CardTitle className="font-extrabold text-7xl">8</CardTitle>
+              <CardTitle className="font-extrabold text-6xl text-blue-800">
+                8
+              </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
-              <p>Tournaments Organized</p>
+              <p className="font-bold">Tournaments Organized</p>
             </CardContent>
           </Card>
           <Link
@@ -82,11 +95,73 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-xl">
-                <p>Stay Updated!</p>
+                <p className="font-bold">Stay Updated!</p>
               </CardContent>
             </Card>
           </Link>
         </div>
+      </div>
+      <div className="grid lg:grid-cols-3 gap-4 pt-4">
+        <Card className="bg-green-400/10 hover:border-green-400">
+          <CardHeader>
+            <CardTitle className="font-bold text-xl ">
+              <Image
+                src="/trust.png"
+                alt="Trust"
+                width={72}
+                height={72}
+                className=""
+              />
+              <h1 className="pt-6">Collaborations</h1>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-lg">
+            <p>
+              Trusted Partnerships with multiple organizations like Amravati
+              Chess Association, Reforms Club, Rotary Club, etc.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-yellow-400/10 hover:border-yellow-400">
+          <CardHeader>
+            <CardTitle className="font-bold text-xl">
+              <Image
+                src="/shield.png"
+                alt="Shield"
+                width={72}
+                height={72}
+                className=""
+              />
+              <h1 className="pt-6">The Gold Standard</h1>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-lg">
+            <p>
+              Complete Transparency with Swiss Manager-made Pairings and
+              automated prize calculations with 100% accuracy
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-purple-400/10 hover:border-purple-400">
+          <CardHeader>
+            <CardTitle className="font-bold text-xl">
+              <Image
+                src="/diagram.png"
+                alt="Stonks"
+                width={72}
+                height={72}
+                className=""
+              />
+              <h1 className="pt-6">Growth</h1>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-lg">
+            <p>
+              Directly contributing to more than 30% growth in active player
+              base in the region
+            </p>
+          </CardContent>
+        </Card>
       </div>
       <div></div>
     </div>

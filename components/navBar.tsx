@@ -21,7 +21,7 @@ export default function NavBar({ className }: { className?: string }) {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="hidden">
             <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
             <NavigationMenuContent className="">
               <NavigationMenuLink>Articles</NavigationMenuLink>
@@ -50,14 +50,18 @@ export default function NavBar({ className }: { className?: string }) {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/make-a-doantion" legacyBehavior passHref>
+            <Link
+              href="https://rzp.io/rzp/sbct-donate-now"
+              legacyBehavior
+              passHref
+            >
               <NavigationMenuLink
                 className={
                   navigationMenuTriggerStyle() +
-                  " bg-linear-to-b from-orange-400 to-orange-600 text-background hover:bg-background"
+                  " bg-linear-to-b from-orange-400 to-orange-600 font-bold hover:bg-linear-to-b hover:from-orange-600 hover:to-orange-400 text-white"
                 }
               >
-               Make a Donation!
+                Make a Donation!
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

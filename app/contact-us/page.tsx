@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <div>
-      <div className="sm:h-[90vh] w-full flex flex-col sm:flex-row-reverse justify-center items-center">
+      <div className="sm:h-[100vh] w-full flex flex-col sm:flex-row-reverse justify-center items-center">
         <div className="pt-[20vh] flex-1/2 flex flex-col justify-center items-center">
           <h1 className="text-foreground bg-background font-bold text-4xl text-center">
             Contact Us!

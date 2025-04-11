@@ -27,12 +27,12 @@ export default function CustomNavBar() {
         <img
           src="logo-rectangle.png"
           alt="Late Savita Bakshi Charitable Trust"
-          className="dark:hidden max-h-[10vh] min-h-18 min-w-1.5 bg-white"
+          className="dark:hidden max-h-[10vh] min-h-18 min-w-15 bg-white"
         />
         <img
           src="logo-rectangle-dark.png"
           alt="Late Savita Bakshi Charitable Trust"
-          className="dark:flex hidden max-h-[10vh] min-h-18 min-w-1.5 bg-white"
+          className="dark:flex hidden max-h-[10vh] min-h-18 min-w-15 bg-white"
         />
         <ul
           className="m-2 flex flex-col sm:hidden cursor-pointer z-10"
