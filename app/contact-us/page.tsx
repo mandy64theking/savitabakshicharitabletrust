@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Page() {
   return (
     <div>
@@ -13,28 +14,37 @@ export default function Page() {
           </h1>
           <div className="flex flex-row items-center pt-4">
             <a href="mailto:savitabakshicharitabletrust@gmail.com">
-              <img
-                src="email.png"
+              <Image
+                src="/email.png"
+                alt="Email"
+                width={64}
+                height={64}
                 className="max-w-8 pl-1 pr-2 dark:invert"
-              ></img>
+              />
             </a>
             <h1> savitabakshicharitabletrust@gmail.com</h1>
           </div>
           <div className="flex flex-row items-center pt-4 pb-4">
             <a href="https://wa.me/919028698447">
-              <img
-                src="whatsapp.png"
+              <Image
+                src="/whatsapp.png"
+                alt="Whatsapp"
+                width={64}
+                height={64}
                 className="max-w-8 pl-1 pr-2 dark:invert"
-              ></img>
+              />
             </a>
             <h1> +91-9028698447</h1>
           </div>
         </div>
         <div className="flex-1/2 flex justify-center sm:pt-[15vh] pb-5">
-          <img
-            src="michelangelo.jpg"
+          <Image
+            src="/michelangelo.jpg"
             className="bg-cover rounded-full object-cover max-h-[45vh] w-[45vh] sm:max-h-[55vh] sm:w-[55vh]"
             alt="Chess Pieces"
+            width={900}
+            height={900}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </div>

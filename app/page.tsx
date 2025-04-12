@@ -31,6 +31,7 @@ export default function Home() {
           <div className="relative group">
             <div className="bg-black bg-opacity-40 blur-[1px] group-hover:blur-[0px]" />
             <Image
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               src="/chess-podium.jpg"
               alt="Prize Distribution Picture"
               width={900}
@@ -86,6 +87,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="font-extrabold text-7xl">
                   <Image
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     src="/instagram.png"
                     alt="Instagram"
                     width={72}
@@ -106,6 +108,7 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="font-bold text-xl ">
               <Image
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 src="/trust.png"
                 alt="Trust"
                 width={72}
@@ -126,6 +129,7 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="font-bold text-xl">
               <Image
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 src="/shield.png"
                 alt="Shield"
                 width={72}
@@ -146,6 +150,7 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="font-bold text-xl">
               <Image
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 src="/diagram.png"
                 alt="Stonks"
                 width={72}

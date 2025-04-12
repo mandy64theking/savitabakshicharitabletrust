@@ -4,62 +4,9 @@ export default function Page() {
     <div className="py-4">
       <div className="min-h-[100vh] flex flex-col items-center  pt-[20vh] w-[80vw] m-auto">
         <div className="flex flex-col lg:flex-row items-center pt-10">
-          {/* <div className="pt-15 grid mb-5 sm:grid-cols-3 gap-5 ">
-          <Card className="w-[80vw] sm:w-[25vw] m-auto dark:bg-muted">
-            <CardHeader>
-              <CardTitle className="text-center">
-                Personalized Coaching
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-center">
-                <p>
-                  Our coaches provide personalized coaching and assignments to
-                  each student. We understand that every student is different
-                  and has unique needs.
-                </p>
-              </CardDescription>
-            </CardContent>
-          </Card>
-          <Card className="w-[80vw] sm:w-[25vw] m-auto dark:bg-muted">
-            <CardHeader>
-              <CardTitle className="text-center">
-                Focus on Improving from Mistakes
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-center dark:bg-muted">
-                <p>
-                  Our coaches believe that the best way to learn is by making
-                  mistakes. We encourage our students to learn from their
-                  mistakes and improve their game.
-                </p>
-              </CardDescription>
-            </CardContent>
-          </Card>
-          <Card className="w-[80vw] sm:w-[25vw] m-auto dark:bg-muted">
-            <CardHeader>
-              <CardTitle className="text-center">
-                Tournament Planning and Preparation
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-center">
-                <p>
-                  Our coaches help our students plan and prepare for
-                  tournaments. We provide them with the necessary resources and
-                  support to succeed.
-                </p>
-              </CardDescription>
-            </CardContent>
-          </Card>
-        </div> */}
-          {/* <h1 className="font-bold text-xl text-center pt-8">
-          Late Savita Bakshi Charitable Trust, Amravati is operational since
-          2024
-        </h1> */}
           <div className="flex-1 bg-linear-to-b from-orange-700 to-orange-500 rounded-xl h-[520]">
             <Image
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               src="/chess-podium-2.jpg"
               alt="Prize Distribution Picture"
               width={1200}
@@ -123,6 +70,7 @@ export default function Page() {
           <div className="flex flex-col lg:flex-row items-center pt-2">
             <div className="flex-1 w-fit bg-linear-to-b from-orange-700 to-orange-500 rounded-xl h-auto m-10">
               <Image
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 src="/girish.png"
                 alt="Girish Bakshi"
                 width={200}
@@ -136,6 +84,7 @@ export default function Page() {
             </div>
             <div className="flex-1 w-fit bg-linear-to-b from-orange-700 to-orange-500 rounded-xl h-auto m-10">
               <Image
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 src="/mandar.png"
                 alt="Mandar Bakshi"
                 width={200}
