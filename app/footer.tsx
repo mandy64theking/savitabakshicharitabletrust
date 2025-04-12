@@ -32,7 +32,7 @@ export default function Footer() {
                 alt="Instagram"
                 width={64}
                 height={64}
-                className="min-w-15 border-1 m-1 p-3 rounded-xl"
+                className="min-w-15 border-1 m-1 p-3 rounded-xl cursor-pointer hover:scale"
               />
             </Link>
             <Link passHref href="https://wa.me/919028698447" legacyBehavior>
@@ -41,7 +41,7 @@ export default function Footer() {
                 alt="Whatsapp"
                 width={64}
                 height={64}
-                className="min-w-15 border-1 m-1 p-3 rounded-xl"
+                className="min-w-15 border-1 m-1 p-3 rounded-xl cursor-pointer hover:scale"
               />
             </Link>
           </div>
