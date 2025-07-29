@@ -21,6 +21,13 @@ export default function NavBar({ className }: { className?: string }) {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/events" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Events
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
           <NavigationMenuItem className="hidden">
             <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
             <NavigationMenuContent className="">

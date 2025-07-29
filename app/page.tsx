@@ -2,6 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const words = [
@@ -41,8 +49,8 @@ export default function Home() {
             <div className="w-full overflow-hidden whitespace-nowrap py-2">
               <h1 className="inline-block animate-infinite-scroll min-w-max">
                 <b className="text-red-500 animate-ping mr-1">Announcement!</b>{" "}
-                5th One Day Rapid Open Chess Tournament coming soon in May 2025!
-                Classical And Blitz coming at the end of May!
+                6th One Day Rapid Open Chess Tournament coming soon in August
+                2025! Classical And Blitz coming in September!
               </h1>
             </div>
           </div>
@@ -51,7 +59,7 @@ export default function Home() {
           <Card className="bg-orange-800/10 hover:border-orange-800">
             <CardHeader>
               <CardTitle className="font-extrabold text-6xl text-orange-800">
-                6000+
+                10000+
               </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
@@ -61,7 +69,7 @@ export default function Home() {
           <Card className="bg-green-800/10 hover:border-green-800">
             <CardHeader>
               <CardTitle className="font-extrabold text-6xl text-green-800">
-                ₹1.2 L+
+                ₹1.6 L+
               </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
@@ -71,7 +79,7 @@ export default function Home() {
           <Card className="bg-blue-800/10 hover:border-blue-800">
             <CardHeader>
               <CardTitle className="font-extrabold text-6xl text-blue-800">
-                8
+                10
               </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
@@ -120,8 +128,8 @@ export default function Home() {
           </CardHeader>
           <CardContent className="text-lg">
             <p>
-              Trusted Partnerships with multiple organizations like Amravati
-              Chess Association, Reforms Club, Rotary Club, etc.
+              Trusted Partnerships with multiple organizations like Tapadia City
+              Centre, Amravati Chess Association, Reforms Club, etc.
             </p>
           </CardContent>
         </Card>
@@ -168,7 +176,55 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
-      <div></div>
+      <div className="h-full flex lg:flex-row flex-col justify-evenly items-center pt-4 hidden">
+        <h1 className="text-5xl py-5">Events</h1>
+        <Carousel>
+          <CarouselContent>
+            <CarouselItem>
+              <Card className="bg-green-800/20 hover:border-green-800">
+                <CardHeader>
+                  <CardTitle className="font-bold text-xl">
+                    CHESS IT UP! 5th One Day Rapid Open Tournament 2025
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="text-lg">
+                  <p>Time Control - 10m + 5s</p>
+                </CardContent>
+                <CardContent className="">
+                  <Button asChild className="bg-green-500 hover:bg-green-300">
+                    <Link href="https://forms.gle/aEkhDXmh15tY8V767">
+                      Register Now
+                    </Link>
+                  </Button>
+                </CardContent>
+                <CardContent className="text-lg">
+                  <p>
+                    Date: 16th May 2025
+                    <br />
+                    Venue: Tapadia City Centre Mall, Amravati
+                    <br />
+                    Time: 09:00 AM
+                    <br />
+                    Registration Fee: ₹ 350
+                    <br />
+                    Prize Pool: ₹ 25,000
+                    <br />
+                    <Link
+                      className="hover:text-green-800"
+                      href="/16th-may-2025.pdf"
+                    >
+                      Download Brochure
+                    </Link>
+                    <br />
+                  </p>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
     </div>
   );
 }
