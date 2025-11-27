@@ -52,7 +52,7 @@ export default function Page() {
               <div className="rounded-xl border-2 mx-4 p-5 bg-green-700/10 hover:border-green-700">
                 <div>
                   <h1 className="font-bold text-5xl text-start text-green-700">
-                    ₹1.2 L+
+                    ₹1.8 L+
                   </h1>
                   Cash Prizes Disbursed
                 </div>

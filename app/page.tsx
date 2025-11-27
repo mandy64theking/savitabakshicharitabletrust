@@ -69,7 +69,7 @@ export default function Home() {
           <Card className="bg-green-800/10 hover:border-green-800">
             <CardHeader>
               <CardTitle className="font-extrabold text-6xl text-green-800">
-                ₹1.6 L+
+                ₹1.8 L+
               </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
