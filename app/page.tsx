@@ -49,8 +49,8 @@ export default function Home() {
             <div className="w-full overflow-hidden whitespace-nowrap py-2">
               <h1 className="inline-block animate-infinite-scroll min-w-max">
                 <b className="text-red-500 animate-ping mr-1">Announcement!</b>{" "}
-                6th One Day Rapid Open Chess Tournament coming soon in August
-                2025! Classical And Blitz coming in September!
+                7th One Day Rapid Open Chess Tournament on 30th November 2025!
+                Classical And Blitz coming in December!
               </h1>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Home() {
           <Card className="bg-orange-800/10 hover:border-orange-800">
             <CardHeader>
               <CardTitle className="font-extrabold text-6xl text-orange-800">
-                10000+
+                15000+
               </CardTitle>
             </CardHeader>
             <CardContent className="text-xl">
@@ -128,8 +128,9 @@ export default function Home() {
           </CardHeader>
           <CardContent className="text-lg">
             <p>
-              Trusted Partnerships with multiple organizations like Tapadia City
-              Centre, Amravati Chess Association, Reforms Club, etc.
+              Trusted Partnerships with multiple organizations like Amravati
+              Municipal Corporation, Tapadia City Centre, Amravati Chess
+              Association, Reforms Club, etc.
             </p>
           </CardContent>
         </Card>
